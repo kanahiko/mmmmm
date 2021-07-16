@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Таблица</h2>
+    </div>
+    <div class="col-3">
+        <input type="file" style="display:none" id="file_dialog" accept=".json" onchange="fileSelect()"/>
+        <button type="submit" class="btn btn-primary form-control" onclick="addButtonClick()">Загрузить в таблицу</button>
+        <p id="error_text"></p>
+    </div>
+    <div class="col-12 border p-3 mg-3">
+        <div class="control-group">
+            <div class="controls  form-inline">
+                <span class="p-1">Фильтровать</span>
+                <input type="number" class="col-1" onchange="loadCVTable(value)" />
+            </div>
+        </div>
+        <br />
+        <form method="post">
+            <table id="CV_table" class="table table-striped table-bordered" style="width: 100%; overflow: scroll;" >                
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <th>Код</th>
+                        <th>Значение</th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/CodeValueTable.js"></script>
+}

@@ -4,16 +4,20 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Test1.Models
+namespace CodingChallenge.Models
 {
+    //add-migration CodeValueToDb
     public class CodeValue
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
+
         [Required]
-        public int code { get; set; }
+        public int Code { get; set; }
+
         [Required]
         [StringLength(200)]
         public string Value { get; set; }
+
     }
 }
