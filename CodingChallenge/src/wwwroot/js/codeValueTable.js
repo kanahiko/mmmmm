@@ -45,19 +45,7 @@ function fileSelect() {
 
                 }
             }
-        /*}).then(function (data) {
-            $('#CV_table tbody').empty();
-            $('#CV_table').append("<tr><th>ID</th><th>Код</th><th>Значение</th></tr>");
-            for (i = 0; i < data.data.length; i++) {
-                $('#CV_table').append("<tr><th>" + data.data[i].id + "</th><th>" + data.data[i].code + "</th><th>" + data.data[i].value + "</th></tr>");
-            }*/
         });
     });
     reader.readAsText(file);
-
-       
-    //});
-
-    //
 }
-

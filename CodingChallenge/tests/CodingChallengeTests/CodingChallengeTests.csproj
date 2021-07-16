@@ -23,7 +23,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CodingChallenge.csproj" />
+    <ProjectReference Include="..\..\CodingChallenge.csproj" />
   </ItemGroup>
 
 </Project>
